@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Booking</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1 class="mu">Murali's Bike Booking Service</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#bikes">Bikes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner">
+    </div>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 style="color: black;">Explore Your City on a Bike</h2>
+            <p style="color:black">Easy and convenient bike booking service at your fingertips.</p>
+            <button onclick="scrollToBooking()">Book Now</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We offer the best bike rental service in the city, providing a range of bikes for all your needs.</p>
+    </section>
+
+    <section id="bikes" title="Order Now" onclick="scrollToBooking()">
+        <h2>Our Bikes</h2>
+        <div class="bike-gallery">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWs9CEdpfWZkmvVJ5H3scZs6dxUtytgqhsIg&s" alt="Bike 1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0mSEgr1NLQ9cm3KHQXEpM14V8Dzdrc-fFSw&s" alt="Bike 2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmURpeNBH63P0ur68ehTnaZDo4UleArPffQg&s" alt="Bike 3">
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2 style="text-shadow: 2px 2px 3px rgba(227, 179, 47, 0.812); color:red ;">Book a Bike</h2>
+        <form id="booking-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="bike-type">Select Bike:</label>
+            <select id="bike-type" name="bike-type">
+                <option value="mountain">Electric Bike</option>
+                <option value="road">Naked Bike</option>
+                <option value="electric">Sports Bike</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bike Booking Service. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
